@@ -4,8 +4,8 @@ services:
   api:
     image: api
     build:
-      context: .
-      dockerfile: .services/api/Dockerfile
+      context: services/api
+      dockerfile: Dockerfile
     ports:
       - 5000:5000
     environment: 
@@ -35,8 +35,8 @@ services:
   celery:
     image: celery
     build:
-      context: .
-      dockerfile: .services/celery/Dockerfile
+      context: services/celery/
+      dockerfile: Dockerfile
     environment: 
       CELERY_RESULT_BACKEND: redis
       CELERY_BROKER_URL: rabbitmq
