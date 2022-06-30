@@ -43,3 +43,6 @@ debugpy*.log
 pydevd*.log
 nodeLanguageServer/**
 nodeLanguageServer.*/**
+env/**
+.ipynb_checkpoints
+.ipynb_checkpoints/

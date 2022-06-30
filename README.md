@@ -1,8 +1,9 @@
 # flask-ocr
 
-A server API to perform optical caracter recognition on PDF asynchronously.
+A system for fulltext indexing of Haitian laws.
 - Flask
 - Celery
-- nfs
-- Rabbitmq
+- MinIO
+- Redis
+- ElasticSearch
 - tesseract
